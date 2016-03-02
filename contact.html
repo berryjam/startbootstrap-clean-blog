@@ -9,7 +9,10 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>Clean Blog - Contact</title>
+    <title>berryjam's blog</title>
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="img/blogger-logo.png">
 
     <!-- Bootstrap Core CSS -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
@@ -44,23 +47,23 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand" href="index.html">Start Bootstrap</a>
+                <a class="navbar-brand" href="index.html">欢迎您的到来!</a>
             </div>
 
             <!-- Collect the nav links, forms, and other content for toggling -->
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                 <ul class="nav navbar-nav navbar-right">
                     <li>
-                        <a href="index.html">Home</a>
+                        <a href="index.html">首页</a>
                     </li>
                     <li>
-                        <a href="about.html">About</a>
+                        <a href="about.html">关于</a>
                     </li>
                     <li>
-                        <a href="post.html">Sample Post</a>
+                        <a href="post.html">博文</a>
                     </li>
                     <li>
-                        <a href="contact.html">Contact</a>
+                        <a href="contact.html">联系</a>
                     </li>
                 </ul>
             </div>
@@ -78,7 +81,10 @@
                     <div class="page-heading">
                         <h1>Contact Me</h1>
                         <hr class="small">
-                        <span class="subheading">Have questions? I have answers (maybe).</span>
+                        <div class="subheading">黄锦坤<br>
+                            清华大学软件学院<br>
+                            Email: berryjamcoding@gmail.com<br>
+                            Addr: 北京海淀清华大学东配楼11区302室</div>
                     </div>
                 </div>
             </div>
@@ -89,36 +95,36 @@
     <div class="container">
         <div class="row">
             <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
-                <p>Want to get in touch with me? Fill out the form below to send me a message and I will try to get back to you within 24 hours!</p>
+                <p>想与我联系吗? 请填写下列信息给我发消息,然后我会尽快在24小时内回复您!</p>
                 <!-- Contact Form - Enter your email address on line 19 of the mail/contact_me.php file to make this form work. -->
                 <!-- WARNING: Some web hosts do not allow emails to be sent through forms to common mail hosts like Gmail or Yahoo. It's recommended that you use a private domain email address! -->
                 <!-- NOTE: To use the contact form, your site must be on a live web host with PHP! The form will not work locally! -->
                 <form name="sentMessage" id="contactForm" novalidate>
                     <div class="row control-group">
                         <div class="form-group col-xs-12 floating-label-form-group controls">
-                            <label>Name</label>
-                            <input type="text" class="form-control" placeholder="Name" id="name" required data-validation-required-message="Please enter your name.">
+                            <label>姓名</label>
+                            <input type="text" class="form-control" placeholder="姓名" id="name" required data-validation-required-message="请输入你的名字.">
                             <p class="help-block text-danger"></p>
                         </div>
                     </div>
                     <div class="row control-group">
                         <div class="form-group col-xs-12 floating-label-form-group controls">
-                            <label>Email Address</label>
-                            <input type="email" class="form-control" placeholder="Email Address" id="email" required data-validation-required-message="Please enter your email address.">
+                            <label>电子邮箱地址</label>
+                            <input type="email" class="form-control" placeholder="电子邮箱地址" id="email" required data-validation-required-message="请输入你的电子邮箱地址.">
                             <p class="help-block text-danger"></p>
                         </div>
                     </div>
                     <div class="row control-group">
                         <div class="form-group col-xs-12 floating-label-form-group controls">
-                            <label>Phone Number</label>
-                            <input type="tel" class="form-control" placeholder="Phone Number" id="phone" required data-validation-required-message="Please enter your phone number.">
+                            <label>联系方式</label>
+                            <input type="tel" class="form-control" placeholder="联系方式" id="phone" required data-validation-required-message="请输入你的联系方式.">
                             <p class="help-block text-danger"></p>
                         </div>
                     </div>
                     <div class="row control-group">
                         <div class="form-group col-xs-12 floating-label-form-group controls">
-                            <label>Message</label>
-                            <textarea rows="5" class="form-control" placeholder="Message" id="message" required data-validation-required-message="Please enter a message."></textarea>
+                            <label>信息内容</label>
+                            <textarea rows="5" class="form-control" placeholder="信息内容" id="message" required data-validation-required-message="请输入信息."></textarea>
                             <p class="help-block text-danger"></p>
                         </div>
                     </div>
@@ -126,7 +132,7 @@
                     <div id="success"></div>
                     <div class="row">
                         <div class="form-group col-xs-12">
-                            <button type="submit" class="btn btn-default">Send</button>
+                            <button type="submit" class="btn btn-default">发送</button>
                         </div>
                     </div>
                 </form>

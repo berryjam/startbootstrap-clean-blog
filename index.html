@@ -9,7 +9,10 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>Clean Blog</title>
+    <title>berryjam's blog</title>
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="img/blogger-logo.png">
 
     <!-- Bootstrap Core CSS -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
@@ -44,23 +47,23 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand" href="index.html">Start Bootstrap</a>
+                <a class="navbar-brand" href="index.html">欢迎您的到来!</a>
             </div>
 
             <!-- Collect the nav links, forms, and other content for toggling -->
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                 <ul class="nav navbar-nav navbar-right">
                     <li>
-                        <a href="index.html">Home</a>
+                        <a href="index.html">首页</a>
                     </li>
                     <li>
-                        <a href="about.html">About</a>
+                        <a href="about.html">关于</a>
                     </li>
                     <li>
-                        <a href="post.html">Sample Post</a>
+                        <a href="post.html">博文</a>
                     </li>
                     <li>
-                        <a href="contact.html">Contact</a>
+                        <a href="contact.html">联系</a>
                     </li>
                 </ul>
             </div>
@@ -76,9 +79,9 @@
             <div class="row">
                 <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
                     <div class="site-heading">
-                        <h1>Clean Blog</h1>
+                        <h1>个人博客</h1>
                         <hr class="small">
-                        <span class="subheading">A Clean Blog Theme by Start Bootstrap</span>
+                        <span class="subheading">记录一些心情</span>
                     </div>
                 </div>
             </div>
@@ -89,55 +92,12 @@
     <div class="container">
         <div class="row">
             <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
-                <div class="post-preview">
-                    <a href="post.html">
-                        <h2 class="post-title">
-                            Man must explore, and this is exploration at its greatest
-                        </h2>
-                        <h3 class="post-subtitle">
-                            Problems look mighty small from 150 miles up
-                        </h3>
-                    </a>
-                    <p class="post-meta">Posted by <a href="#">Start Bootstrap</a> on September 24, 2014</p>
+                <div id="content">
                 </div>
-                <hr>
-                <div class="post-preview">
-                    <a href="post.html">
-                        <h2 class="post-title">
-                            I believe every human has a finite number of heartbeats. I don't intend to waste any of mine.
-                        </h2>
-                    </a>
-                    <p class="post-meta">Posted by <a href="#">Start Bootstrap</a> on September 18, 2014</p>
-                </div>
-                <hr>
-                <div class="post-preview">
-                    <a href="post.html">
-                        <h2 class="post-title">
-                            Science has not yet mastered prophecy
-                        </h2>
-                        <h3 class="post-subtitle">
-                            We predict too much for the next year and yet far too little for the next ten.
-                        </h3>
-                    </a>
-                    <p class="post-meta">Posted by <a href="#">Start Bootstrap</a> on August 24, 2014</p>
-                </div>
-                <hr>
-                <div class="post-preview">
-                    <a href="post.html">
-                        <h2 class="post-title">
-                            Failure is not an option
-                        </h2>
-                        <h3 class="post-subtitle">
-                            Many say exploration is part of our destiny, but it’s actually our duty to future generations.
-                        </h3>
-                    </a>
-                    <p class="post-meta">Posted by <a href="#">Start Bootstrap</a> on July 8, 2014</p>
-                </div>
-                <hr>
                 <!-- Pager -->
                 <ul class="pager">
                     <li class="next">
-                        <a href="#">Older Posts &rarr;</a>
+                        <a href="#" onclick="earlierBlogsLoad()">更早的博文 &rarr;</a>
                     </li>
                 </ul>
             </div>
@@ -177,7 +137,7 @@
                             </a>
                         </li>
                     </ul>
-                    <p class="copyright text-muted">Copyright &copy; Your Website 2014</p>
+                    <p class="copyright text-muted">Copyright &copy; berryjam 2014</p>
                 </div>
             </div>
         </div>
@@ -192,6 +152,13 @@
     <!-- Custom Theme JavaScript -->
     <script src="js/clean-blog.min.js"></script>
 
+    <!-- blog releated JavaScript -->
+    <script src="js/main.js"></script>
+    <script src="js/utility.js"></script>
+
+    <script type="text/javascript">
+        blogLoad();
+    </script>
 </body>
 
 </html>
